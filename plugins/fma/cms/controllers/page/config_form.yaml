@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Page
+
+# Model Form Field configuration
+form: $/fma/cms/models/page/fields.yaml
+
+# Model Class name
+modelClass: Fma\Cms\Models\Page
+
+# Default redirect location
+defaultRedirect: fma/cms/page
+
+# Create page
+create:
+    title: Create Page
+    redirect: fma/cms/page/update/:id
+    redirectClose: fma/cms/page
+
+# Update page
+update:
+    title: Edit Page
+    redirect: fma/cms/page
+    redirectClose: fma/cms/page
+
+# Preview page
+preview:
+    title: Preview Page

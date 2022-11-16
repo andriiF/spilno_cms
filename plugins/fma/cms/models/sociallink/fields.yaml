@@ -1,0 +1,38 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+tabs:
+    
+    fields:
+        name:
+            tab: Treść
+            span: storm
+            cssClass: col-xs-12
+            label: nazwa
+        link:
+            tab: Treść
+            label: Link
+            span: storm
+            cssClass: col-xs-12
+            
+        position:
+            tab: Treść
+            span: storm
+            cssClass: col-xs-12
+            label: Pozycja
+        icon:
+            tab: Treść
+            label: Ikon
+            span: storm
+            cssClass: col-xs-12
+            type: fileupload
+            fileTypes: svg,png
+            mode: image
+#        hover:
+#            tab: Treść
+#            label: Ikon po najechaniu
+#            span: storm
+#            cssClass: col-xs-6
+#            type: fileupload
+#            fileTypes: svg,png
+#            mode: image

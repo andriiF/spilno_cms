@@ -1,0 +1,7 @@
+<ul class="navbar-nav mr-auto">
+    {% for menu_item in header_menu %}
+    <li class="nav-item active">
+        <a class="nav-link scrollTo" href="{{menu_item.link}}">{{menu_item.name}}</a>
+    </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,17 @@
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 22px;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover {
+      color: #ffffff;
+      text-decoration: underline;
+
+    }
+
+  }
+}

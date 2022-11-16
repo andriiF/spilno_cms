@@ -1,0 +1,15 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+tabs:
+    fields:
+        name:
+            label: Nazwa
+            tab: Treść
+            span: storm
+            cssClass: col-xs-6
+        frontend_path:
+            label: Path
+            tab: Treść
+            span: storm
+            cssClass: col-xs-6

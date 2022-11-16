@@ -1,0 +1,17 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    name:
+        label: Nazwa
+        searchable: true
+    seo:
+        label: SEO
+        searchable: true
+    lang_code:
+        label: Język
+        searchable: true

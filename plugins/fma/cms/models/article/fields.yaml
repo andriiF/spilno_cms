@@ -1,0 +1,73 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+
+tabs:
+    fields:
+        position:
+            label: Pozycja
+            type: number
+            tab: Parametry
+            span: storm
+            cssClass: col-xs-6
+        show_page:
+            cssClass: col-xs-6
+            label: Opublikuj Artykuł
+            span: storm
+            type: checkbox
+            tab: Parametry
+        show_slider:
+            cssClass: col-xs-6
+            label: Wyróżni artykuł
+            span: storm
+            type: checkbox
+            tab: Parametry
+        created_at@update:
+          label: Pole data publikacji
+          tab: Parametry
+          type: datepicker
+          span: storm
+          format: Y-m-d
+          ignoreTimezone: true
+          mode: datetime 
+          cssClass: col-sm-6
+        parameters:
+          type: nestedform
+          tab: Parametry
+          span: storm
+          cssClass: col-sm-6
+          form:
+              fields:
+                  type:
+                      label: Typ artukułu
+                      type: dropdown
+                      option: 1
+          
+        I18ns:
+            tab: Treść
+            type: partial
+            context: update
+            path: $/fma/cms/controllers/article/partials/_i18n_relation.htm
+        multimedia:
+            label: Zdjęcia
+            tab: Media
+            span: storm
+            cssClass: col-xs-12
+            type: fileupload
+            mode: image
+        background_image:
+            label: Tło
+            tab: Media
+            span: storm
+            cssClass: col-xs-12
+            type: fileupload
+            mode: image
+        background_video:
+            label: Video
+            tab: Media
+            span: storm
+            cssClass: col-xs-12
+            type: richeditor
+            toolbarButtons: insertVideo,align
+   

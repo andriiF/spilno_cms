@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Menu
+
+# Model Form Field configuration
+form: $/fma/cms/models/menu/fields.yaml
+
+# Model Class name
+modelClass: Fma\Cms\Models\Menu
+
+# Default redirect location
+defaultRedirect: fma/cms/menu
+
+# Create page
+create:
+    title: Create Menu
+    redirect: fma/cms/menu/update/:id
+    redirectClose: fma/cms/menu
+
+# Update page
+update:
+    title: Edit Menu
+    redirect: fma/cms/menu
+    redirectClose: fma/cms/menu
+
+# Preview page
+preview:
+    title: Preview Menu

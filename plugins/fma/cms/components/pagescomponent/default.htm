@@ -1,0 +1,11 @@
+{% if rows|length > 0%}
+    {% for row in rows %}
+        {% if (row.show_page == 1) %}
+            {% partial '@pagesections/' ~ row.pagetype.frontend_path  page=row %}
+        {% endif %}
+    {% endfor %}
+{% elseif pageRow %}
+    {% if (pageRow.show_page == 1) %}
+            {% partial '@pagesections/subpage'   page=pageRow %}
+    {% endif %}
+{% endif %}

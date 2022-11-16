@@ -1,0 +1,45 @@
+<section id="dzialania" class="whatwedo pb-5">
+    <h2 class="text-white">
+        {{page.I18n.name}}
+    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-5">
+                <p class="text-white text-center">
+                    <a class="no-link arrow-link collapsed" data-bs-toggle="collapse" href="#collapseText"
+                       role="button"
+                       aria-expanded="false" aria-controls="collapseText">
+                        {{page.I18n.description | striptags}}
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                </p>
+                <div class="collapse" id="collapseText">
+                    <div class="card text-white">
+                        {{page.I18n.sub_description | raw}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="text-center">
+                    <h5>{{'prawnik'|_}}</h5>
+                    <a href="#" class="no-link">
+                        <div class="form-link">
+                            <span>{{'umow_wizyte'|_}}</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="text-center">
+                    <h5>{{'psycholog'|_}}</h5>
+                    <a href="#" class="no-link">
+                        <div class="form-link">
+                            <span>{{'umow_wizyte'|_}}</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

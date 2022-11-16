@@ -1,0 +1,20 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    I18n_name:
+        label: Nazwa
+        sortable: false
+    I18n_seo:
+        label: SEO
+        sortable: false
+    show_page:
+        label: publikacja
+        sortable: false
+    position:
+        label: Pozycja
+        searchable: true

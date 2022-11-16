@@ -1,0 +1,79 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+tabs:
+    fields:
+        position:
+            label: Pozycja
+            type: number
+            tab: Parametry
+            span: storm
+            cssClass: col-xs-6
+        background:
+            tab: Parametry
+            span: storm
+            cssClass: col-xs-6
+            label: Kolor tła
+        link:
+            cssClass: col-xs-6
+            tab: Parametry
+            span: storm
+            label: Odnośnik
+            
+            
+        main_page:
+            cssClass: col-xs-6
+            label: Strona główna
+            span: storm
+            type: checkbox
+            tab: Parametry
+        show_page:
+            cssClass: col-xs-6
+            label: Opublikuj stronę
+            span: storm
+            type: checkbox
+            tab: Parametry
+            
+        page_type:
+            label: Typ Strony
+            tab: Parametry
+            span: storm
+            cssClass: col-xs-6 
+            type: dropdown
+        page_type_id:
+            label: Kontent Strony
+            tab: Parametry
+            span: storm
+            cssClass: col-xs-6
+            type: dropdown
+            trigger:
+                action: show
+                field: page_type
+                condition: value[2]
+        I18ns:
+            tab: Treść
+            type: partial
+            context: update
+            path: $/fma/cms/controllers/page/partials/_i18n_relation.htm
+        multimedia:
+            label: Zdjęcia
+            tab: Media
+            span: storm
+            cssClass: col-xs-12
+            type: fileupload
+            mode: image
+        background_image:
+            label: Zdjęcie główne
+            tab: Media
+            span: storm
+            cssClass: col-xs-12
+            type: fileupload
+            mode: image
+        pages:
+            tab: Podstrony
+            type: partial
+            path: $/fma/cms/controllers/page/partials/_pages_relation.htm
+            context: update
+            
+            
+            

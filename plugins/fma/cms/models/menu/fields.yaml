@@ -1,0 +1,43 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+tabs:
+    fields:
+        name:
+            label: Nazwa
+            tab: Treść
+            span: storm
+            cssClass: col-xs-12
+        menu_type:
+            label: Menu Typ
+            tab: Treść
+            span: storm
+            cssClass: col-xs-6
+            type: dropdown
+        path:
+            label: Strona zewnętrzna
+            tab: Treść
+            span: storm
+            cssClass: col-xs-6
+            trigger:
+                action: show
+                field: menu_type
+                condition: value[1]
+        page_id:
+            label: Strona wewnętrzna
+            tab: Treść
+            span: storm
+            cssClass: col-xs-6
+            type: dropdown
+            trigger:
+                action: show
+                field: menu_type
+                condition: value[2]
+        menus:
+            tab: Elementy Menu
+            type: partial
+            path: $/fma/cms/controllers/menu/partials/_menus_relation.htm
+            context: update
+            
+            
+            

@@ -1,0 +1,79 @@
+<div class="banner">
+    <img src="{{ page.background_image.getPath() }}" alt="Image" class="img-fluid">
+</div>
+<section class="contact-bar">
+    <div class="container">
+        <div class="list">
+            <a href="tel:{{'phone_number'|_}}" class="phone" target="_blank">
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    {{'phone_number'|_}}
+                    </span>
+            </a>
+            <a href="mailto:{{'email'|_}}" class="email" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+                <span>{{'email'|_}}</span>
+            </a>
+            <a href="{{'address_link'|_}}" class="address" target="_blank">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>
+                    {{'address'|_}}
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
+{% if 0 %}
+<section class="top-slider" id="{{page.pagetype.frontend_path}}">
+    <img src="{{'assets/images/elements/element2.svg'| theme}}" alt="element kolo" class="top-element-circle"/>
+    <img src="{{'assets/images/elements/element2.svg'| theme}}" alt="element kolo" class="bottom-element-half-circle"/>
+    <div class="container">
+        <div class="owl-carousel owl-theme" id="top-slider-owl">
+            {%for children in page.pages %}
+            {% if children.show_page %}
+            <div class="item">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <div class="left-side-slider">
+                            <h1>
+                                {{children.I18n.name}}
+                            </h1>
+                            <div class="short-text">
+                                {{children.I18n.description | raw}}
+                            </div>
+                            <div class="navigation"></div>
+                            <div class="btn-lines">
+                                <a href="/#contact-form" class="btn btn-primary">
+                                    <span>
+                                        {{'topbtn'|_}}
+                                    </span>
+                                    <span>
+                                        {{'topbtnhover'|_}}
+                                    </span>
+                                </a>
+                                <a href="/#boxes" class="btn btn-primary btn-white-borderer w-250">
+                                    <span>
+                                        {{'topbigbtn'|_}}
+                                    </span>
+                                    <span>
+                                        {{'topbigbtnhover'|_}}
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12  col-md-7">
+                        <div class="slider-image" style="  background-image: url({{ children.background_image.path}});">
+                            <img src="{{'assets/images/elements/element1.png' | theme}}" class="element-slider"
+                                 alt='element'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {%endif%}
+            {%endfor%}
+        </div>
+    </div>
+</section>
+{% endif %}

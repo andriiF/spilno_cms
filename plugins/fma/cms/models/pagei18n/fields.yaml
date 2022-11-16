@@ -1,0 +1,42 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+tabs:
+    fields:
+        name:
+            label: Nazwa
+            tab: Treść
+        lang_id:
+             tab: Treść
+             label: Język
+             type: dropdown
+             default: 1
+        seo:
+            label: SEO
+            tab: Treść
+        description:
+            label: Opis
+            type: richeditor
+            toolbarButtons: fullscreen|bold|italicunderline|strikeThrough|subscript|superscript|fontFamily|fontSize|color|paragraphFormat|align|formatOL|formatUL|outdent|indent|quote|insertLink|insertImage|insertVideo|insertTable|undo|redo|html
+            size: huge
+            tab: Treść
+        sub_description:
+            label: Opis 2
+            toolbarButtons: fullscreen|bold|italicunderline|strikeThrough|subscript|superscript|fontFamily|fontSize|color|paragraphFormat|align|formatOL|formatUL|outdent|indent|quote|insertLink|insertImage|insertVideo|insertTable|undo|redo|html
+            type: richeditor
+            tab: Treść
+        meta_title:
+            tab: Meta dane
+            label: Meta tytuł
+        meta_keywords:
+            tab: Meta dane
+            label: Meta słowa
+        meta_description:
+            tab: Meta dane
+            label: Meta Opis
+            type: textarea
+            
+        
+            
+            
+    

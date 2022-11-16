@@ -1,0 +1,24 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+I18ns:
+    label: wersję językową
+    view:
+        list: $/fma/cms/models/pagei18n/columns.yaml
+        showSearch: true
+        toolbarButtons: create|delete
+    manage:
+        form: $/fma/cms/models/pagei18n/fields.yaml
+        recordsPerPage: 10
+
+pages:
+    label: Podstrony
+    view:
+        list: $/fma/cms/models/page/columns.yaml
+        showSearch: true
+        toolbarButtons: create|delete
+        recordOnClick: window.location.href = "/backend/fma/cms/page/update/"+$(this).closest("tr").find("input").val()
+    manage:
+        form: $/fma/cms/models/page/fields.yaml
+        recordsPerPage: 10

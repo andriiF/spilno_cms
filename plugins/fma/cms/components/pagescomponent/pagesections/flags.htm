@@ -1,0 +1,13 @@
+<section class="flags-bar ">
+    <div class="container">
+        <div class="row">
+            {% for language in languages%}
+            <div class="col-4">
+                <a href="#" class="text-center d-block" data-request="onSwitchLocale" data-request-data="locale: '{{language.code}}'">
+                    <img src="/themes/spilno/assets/img/{{language.code}}.png" alt="{{language.name}}" class="img-fluid" width="100"/>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

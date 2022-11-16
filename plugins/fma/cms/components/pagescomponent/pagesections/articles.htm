@@ -1,0 +1,32 @@
+<section class="mt-5" id="aktualnosci">
+    <h2>
+        {{page.I18n.name}}
+    </h2>
+    <div class="container">
+        <div class="row list-articles">
+            {% for news in page.pages%}
+            <a href="/{{news.I18n.seo}}" class="d-block no-link mb-4 item">
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="media text-left mb-4">
+                            <img class="img-fluid" src="{{news.background_image.thumb(250,180,{'mode':'crop'})}}"
+                                 alt="zdjecie">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-9">
+                        <div class="content-box">
+                            {{ news.I18n.description | raw }}
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="text-start mb-5 more-articles">
+            <a href="#" class="text-sm text-highlight text-uppercase text-decoration-none lines loadMoreArticles"
+               onclick="return false">
+                dalej
+            </a>
+        </div>
+    </div>
+</section>

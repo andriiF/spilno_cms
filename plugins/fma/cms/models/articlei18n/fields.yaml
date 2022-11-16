@@ -1,0 +1,34 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        name:
+            label: Nazwa
+            tab: Treść
+        lang_id:
+             tab: Treść
+             label: Język
+             type: dropdown
+        seo: 
+            label: SEO
+            tab: Treść
+        description:
+            label: Opis
+            type: richeditor
+            tab: Treść
+        sub_description:
+            label: Opis 2
+            type: textarea
+            tab: Treść
+        meta_title:
+            tab: Meta dane
+            label: Meta tytuł
+        meta_keywords:
+            tab: Meta dane
+            label: Meta słowa
+        meta_description:
+            tab: Meta dane
+            label: Meta Opis
+            type: textarea

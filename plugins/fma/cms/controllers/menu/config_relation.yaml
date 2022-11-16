@@ -1,0 +1,14 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+menus:
+    label: Elementy Menu
+    view:
+        list: $/fma/cms/models/menu/columns.yaml
+        showSearch: true
+        toolbarButtons: create|delete
+        recordOnClick: window.location.href = "/backend/fma/cms/menu/update/"+$(this).closest("tr").find("input").val()
+    manage:
+        form: $/fma/cms/models/menu/fields.yaml
+        recordsPerPage: 10

@@ -1,0 +1,25 @@
+1.0.1: 
+        - First version 
+        - create_pages_table.php
+        - create_page_i18ns_table.php
+1.0.2:
+        - Game plus Articles
+        - create_articles_table.php
+        - create_article_i18ns_table.php
+1.0.3:
+        - Create page type table
+        - create_page_types_table.php
+        
+1.0.4:
+        - Create menu configurator
+        - create_menus_table.php
+1.0.5:
+        - create social ikons
+        - create_social_links_table.php
+
+1.0.6:
+        - add newsletter table
+        - create_newsletters_table.php
+1.0.7:
+        - add video do artykułow
+        - add_video_to_articles.php

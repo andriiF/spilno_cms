@@ -1,0 +1,27 @@
+<header>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    {% for item in header_menu %}
+                    <li class="nav-item">
+                        {% if isMainPage %}
+                        <a class="nav-link" href="#" data-href="{{item.link}}">{{item.name}}</a>
+                        {% else %}
+                        <a class="nav-link" href="/" data-href="{{item.link}}">{{item.name}}</a>
+                        {% endif%}
+                    </li>
+                    {% endfor%}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
